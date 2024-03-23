@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: hidden;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(11,78,149);
+    padding: 0 10px 0 0;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 14px;
+}
+
+.user{
+    margin: 25px 0;
+}
+
+.user-initial {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(7,56,98);
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-left: 25px
+}
+
+.user-name {
+    font-size: 14px;
+    color: white;
+    font-family: 'Changa', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #ffffff;
+}
+.main-container #imageItem {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    filter: brightness(30%);
+    z-index: -1;
+}
+.container {
+    margin-top: 2%;
+    position: absolute; 
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.searchbar {
+    margin-bottom: 20px;
+}
+
+.searchbar input {
+    position: relative;
+    z-index: 2;
+    width: 65%;
+    padding: 17px 25px;
+    border-radius: 40px;
+}
+
+.searchbar input[type="text"]:focus {
+    outline: none;
+    border: 2px solid rgb(116, 117, 118);
+}
+
+.searchbar input[type="text"]::placeholder {
+    color: #bcb9b9;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 50px 55px 50px;
+}
+
+.action-button {
+    margin-right:25px;
+}
+
+.action-button:last-child {
+    margin-right: 0;
+}
+
+.action-button button {
+    text-align: left;
+    color: white;
+    width: 220px;
+    padding: 17px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-button img{
+    max-width: 40px;
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.button-img{
+    height: 120px;
+}
+
+#claim {
+    background-color: #32B8DE;
+}
+
+#problem {
+    background-color: #90CB25;
+}
+
+#record {
+    background-color: #FD6772;
+}
+
+.action-button button:hover {
+    transform: scale(1.05);
+}
+
+.announcements {
+    position: relative;
+    margin: 45px 7%;
+    text-align: left;
+}
+
+.announcements h3 {
+    margin-bottom: 15px;
+}
+
+.announcement {
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.autocomplete-items {
+    left: 19%;
+    width: 62%;
+    position: absolute;
+    background-color: rgb(238, 236, 236);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer; ;
+}
+
+.autocomplete-item.selected {
+    background-color: #f3f7bc;
+    border-radius: 100px;
+}
+
+
+
